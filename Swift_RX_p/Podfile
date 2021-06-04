@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Swift_RX_p' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Swift_RX_p
+    pod 'LookinServer'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+#  pod "PromiseKit", "~> 6.8"
+    pod 'Moya/RxSwift', '~> 14.0'
+
+  target 'Swift_RX_pTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Swift_RX_pUITests' do
+    # Pods for testing
+  end
+
+end
