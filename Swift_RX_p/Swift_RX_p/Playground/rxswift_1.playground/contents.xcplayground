@@ -6,5 +6,6 @@
         <page name='Observerable'/>
         <page name='disposing'/>
         <page name='subject'/>
+        <page name='BehaviorRelay'/>
     </pages>
 </playground>
