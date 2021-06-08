@@ -7,5 +7,7 @@
         <page name='disposing'/>
         <page name='subject'/>
         <page name='BehaviorRelay'/>
+        <page name='ignore'/>
+        <page name='ReplaySubject'/>
     </pages>
 </playground>

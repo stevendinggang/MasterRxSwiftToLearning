@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31D5B52266E0FC8001C2B7E /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D5B51266E0FC8001C2B7E /* FilterService.swift */; };
 		B3727C2B2669173C00C3CD58 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3727C2A2669173C00C3CD58 /* NewViewController.swift */; };
 		B3727C2D2669C44B00C3CD58 /* PhontosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3727C2C2669C44B00C3CD58 /* PhontosCollectionViewController.swift */; };
 		B3727C2F2669CC2D00C3CD58 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3727C2E2669CC2D00C3CD58 /* Alamofire.framework */; };
@@ -56,6 +57,8 @@
 		488B8411664491219B9A1F7B /* Pods-Swift_RX_p.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_RX_p.debug.xcconfig"; path = "Target Support Files/Pods-Swift_RX_p/Pods-Swift_RX_p.debug.xcconfig"; sourceTree = "<group>"; };
 		6878A8B8F680BEE8F4AE4A2E /* Pods_Swift_RX_p_Swift_RX_pUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_RX_p_Swift_RX_pUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		987D5DEEDA0C62716BEDAFED /* Pods-Swift_RX_p-Swift_RX_pUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_RX_p-Swift_RX_pUITests.release.xcconfig"; path = "Target Support Files/Pods-Swift_RX_p-Swift_RX_pUITests/Pods-Swift_RX_p-Swift_RX_pUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B31D5B51266E0FC8001C2B7E /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
+		B3612221266FC04D00C0F6F1 /* MyPlayground.playground 23-11-31-373.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "MyPlayground.playground 23-11-31-373.playground"; sourceTree = "<group>"; };
 		B3727C2A2669173C00C3CD58 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		B3727C2C2669C44B00C3CD58 /* PhontosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhontosCollectionViewController.swift; path = Swift_RX_p/MasterRxSwift/PhontosCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		B3727C2E2669CC2D00C3CD58 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,9 +137,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B31D5B50266E0FAF001C2B7E /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				B31D5B51266E0FC8001C2B7E /* FilterService.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		B3727C3A2669D84F00C3CD58 /* MasterRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				B31D5B50266E0FAF001C2B7E /* Filter */,
 				B3727C3B266A102300C3CD58 /*  View */,
 				B3727C382669D7CF00C3CD58 /* ViewController.swift */,
 				B3727C2C2669C44B00C3CD58 /* PhontosCollectionViewController.swift */,
@@ -155,6 +167,7 @@
 		B3769A2B2665199600E4ED66 /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				B3612221266FC04D00C0F6F1 /* MyPlayground.playground 23-11-31-373.playground */,
 				B3769A2C266519B600E4ED66 /* rxswift_1.playground */,
 			);
 			path = Playground;
@@ -497,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3769A3026661CE600E4ED66 /* RXViewController.swift in Sources */,
+				B31D5B52266E0FC8001C2B7E /* FilterService.swift in Sources */,
 				B3EDCB312660E328005F8467 /* SBViewController.swift in Sources */,
 				B3727C3E266A104A00C3CD58 /* PhontosCollectionViewCell.swift in Sources */,
 				B3EDCB5E2660E8E5005F8467 /* ViewController+Extention.swift in Sources */,

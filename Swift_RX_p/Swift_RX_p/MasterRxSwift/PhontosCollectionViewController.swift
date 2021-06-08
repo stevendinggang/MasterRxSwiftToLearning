@@ -7,8 +7,17 @@
 
 import UIKit
 import Photos
+import RxSwift
+import RxCocoa
 
 class PhontosCollectionViewController: UICollectionViewController {
+
+    private let selectedPhotosSubject = PublishSubject<UIImage>()
+
+    var selectedPhotot:Observable<UIImage> {
+        return selectedPhotosSubject.asObservable()
+    }
+
 
     private var images:[PHAsset] = []
 
@@ -103,5 +112,24 @@ extension PhontosCollectionViewController {
 
 }
 
+extension PhontosCollectionViewController {
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedAsset = self.images[indexPath.row]
+        PHImageManager.default().requestImage(for: selectedAsset, targetSize: CGSize(width: 300, height: 300), contentMode: .aspectFit, options: nil) { [weak self] image, info in
+
+            guard let info = info else { return }
+            let isDegradeImage = info["PHImageResultIsDegradedKey"] as! Bool
+
+            if !isDegradeImage {
+                if let image = image {
+                    self?.selectedPhotosSubject.onNext(image)
+                    self?.dismiss(animated: true, completion: nil)
+                }
+            }
+
+        }
+
+    }
+}
 

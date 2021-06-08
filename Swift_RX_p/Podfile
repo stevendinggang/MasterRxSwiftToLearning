@@ -9,6 +9,8 @@ target 'Swift_RX_p' do
     pod 'LookinServer'
     pod 'RxSwift'
     pod 'RxCocoa'
+    pod 'FBRetainCycleDetector'
+    pod 'MLeaksFinder'
 #  pod "PromiseKit", "~> 6.8"
     pod 'Moya/RxSwift', '~> 14.0'
 
